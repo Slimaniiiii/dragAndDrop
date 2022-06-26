@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.textBlack{
+  color: black;
+}
+
+.draggable {
+  padding: 0.3rem;
+  color: white;
+  background-color: rgb(35, 58, 149);
+  border: 1px solid black;
+  cursor: move;
+  border-radius: 15px;
+}
+
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+  gap: 10px;
+}
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .row .col {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
